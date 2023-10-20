@@ -1,0 +1,13 @@
+# ignore ALL .log files
+*.log
+*.bak
+__pycache__/         
+images/
+assets/          
+festival09/                     
+festival11/
+festival12/
+april10/
+*.wmv
+*.htm
+#

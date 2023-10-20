@@ -1,0 +1,582 @@
+    1  sudo nano /etc/fstab
+    2  sudo mount -a
+    3  /usr/bin/smbclient -L host
+    4  /usr/bin/smbclient -L tigru
+    5  smbclient -L ray
+    6  smbclient -L tigru
+    7  mount -t cifs //tigru/Multimedia -o username-ray,password=bingenb /media/windowsshare
+    8  sudo mount -t cifs //tigru/Multimedia -o username-ray,password=bingenb /media/windowsshare
+    9  sudo mount -t cifs //tigru/Multimedia -o username=ray,password=bingenb /media/windowsshare
+   10  cd /media
+   11  ls
+   12  cd windowshare
+   13  cd windowsshare
+   14  ls
+   15  cd photos
+   16  ls
+   17  history|grep shutdown
+   18  man shutdown
+   19  sudo shutdown -h now
+   20  tail /var/log/messages
+   21  sudo tail /var/log/messages
+   22  cd /var/log
+   23  ls
+   24  less boot.log
+   25  less syslog
+   26  syslog > grep fail
+   27  man less
+   28  less /fail syslog
+   29  less syslog
+   30  man less
+   31  less syslog
+   32  ls
+   33  ls -als
+   34  less kern.log
+   35  man mount.cifs
+   36  sudo shutdown -h now
+   37  kdesudo muon-updater
+   38  man shutdown
+   39  sudo shutdown -r now
+   40  sudo shutdown -h now
+   41  history
+   42  kdesudo muon-updater
+   43  sudo shutdown -h now
+   44  kdesudo muon-updater
+   45  sudo shutdown -h now
+   46  df
+   47  df
+   48  man df
+   49  df -h
+   50  sudo teamviewer --daemon start
+   51  ps -aux
+   52  ps -aux|grep fire
+   53  kill -9 11925
+   54  ps -aux|grep fire
+   55  sudo shutdown -h now
+   56  ls
+   57  cd Downloads/
+   58  ls install_flash_player_11_linux.x86_64.tar.gz 
+   59  tar -zxvf install_flash_player_11_linux.x86_64.tar.gz 
+   60  ls usr/
+   61  kdesudo muon-updater
+   62  top
+   63  kill -9 12228
+   64  sudo kill -SIGTERM 12228
+   65  cd /usr/lib
+   66  ls
+   67  ls mozilla/
+   68  cd plugins
+   69  cd mozilla/
+   70  ls
+   71  cd plugins
+   72  ls
+   73  kdesudo muon-updater
+   74  ntop
+   75  top
+   76  sudo apt-get install nethogs
+   77  sudo apt-get update
+   78  sudo apt-get upgrade
+   79  sudo apt-get check
+   80  sudo apt-get update
+   81  sudo apt-get upgrade
+   82  sudo apt-get autoremove
+   83  man shutdown
+   84  sudo shutdown -r now
+   85  history
+   86  kdesudo muon-updater
+   87  sudo apt-get update
+   88  sudo apt-get upgrade
+   89  sudo apt-get dist-upgrade
+   90  history|grep shutd
+   91  sudo shutdown -r now
+   92  ssh linuxtwo
+   93  sudo shutdown now
+   94  ls
+   95  df
+   96  sudo shutdown now
+   97  sudo shutdown -h now
+   98  df
+   99  history
+  100  hp-test
+  101  sudo hp-check
+  102  hplip
+  103  hp-setup
+  104  cd Downloads/
+  105  ls mine
+  106  ls mine*
+  107  ls
+  108  ls Minecraft.jar 
+  109  chmod +x Minecraft.jar 
+  110  history|grep shutd
+  111  sudo shutdown -h now
+  112  traceroute 217.37.95.33
+  113  sudo apt-get install inetutils-traceroute
+  114  traceroute 217.37.95.33
+  115  man traceroute
+  116  traceroute --resolve-hostnames 217.37.95.33
+  117  ping 217.37.95.33
+  118  ping 217.37.95.38
+  119  ping 217.37.95.33
+  120  ping 217.37.95.34
+  121  ping 217.37.95.33
+  122  ping 217.37.95.35
+  123  ping 217.37.95.36
+  124  ping 217.37.95.37
+  125  ping 217.37.95.38
+  126  sudo teamviewer --daemon start
+  127  ping 217.37.95.33
+  128  ping 217.37.95.38
+  129  ping 217.37.95.34
+  130  ping 217.37.95.33
+  131  ping 217.37.95.35
+  132  ping 217.37.95.36
+  133  ping 217.37.95.37
+  134  ping 217.37.95.38
+  135  history
+  136  kdesudo muon-updater
+  137  sudo -r shutdown now
+  138  sudo shutdown -r now
+  139  ls
+  140  chmod +x vmware-install.pl 
+  141  ./vmware-install.pl 
+  142  sudo ./vmware-install.pl 
+  143  sudo shutdown -r now
+  144  dig a284641.mx.mailhop.org.
+  145  man dhcp
+  146  man dhcpd
+  147  history |grep telnet
+  148  telnet linuxtwo
+  149  history |grep ssh
+  150  ssh linuxtwo
+  151  ps
+  152  ps -alx
+  153  ps -alx|gimp
+  154  gimp
+  155  man gimp
+  156  gimp --verbose
+  157  ps -alx|grep gimp
+  158  kill -9 36167
+  159  ps -alx|grep gimp
+  160  kill -9 36184
+  161  kill -9 36195
+  162  kill -9 36184
+  163  ps -alx|grep gimp
+  164  kill -9 36176
+  165  ps -alx|grep gimp
+  166  kill -9 36151
+  167  kill -9 36195
+  168  ps -alx|grep gimp
+  169  man kill
+  170  man signal
+  171  man signal(7)
+  172  man signal7
+  173  help signal
+  174  info signal
+  175  ps -alx|grep gimp
+  176  man kill
+  177  kill -s sigkill 36176
+  178  ps -alx|grep gimp
+  179  gimp --verbose
+  180  history|grep kde
+  181  kdesudo muon-updater
+  182  sane
+  183  xsane
+  184  man xsane
+  185  xsane -v
+  186  cd /etc
+  187  ls
+  188  ls s*
+  189  cd /default
+  190  ls
+  191  ls d*
+  192  cd default
+  193  ls
+  194  less saned
+  195  cd ..
+  196  ls sys*
+  197  cd systemd
+  198  ls
+  199  sudo saned
+  200  xsane
+  201  sudo shutdown -r now
+  202  su
+  203  sudo saned
+  204  ps -alx|grep sane
+  205  xsane
+  206  gimp --verbose
+  207  ssh linuxtwo
+  208  exit
+  209  dpkg -l hplip
+  210  hp-setup
+  211  su hp-check -t
+  212  man hp-check
+  213  hp-check
+  214  man hplip
+  215  ls
+  216  cd Downloads/
+  217  ls
+  218  chmod +x hplip-3.15.2.run 
+  219  sh hplip-3.15.2.run
+  220  history
+  221  hp-check
+  222  man apt-add-repository
+  223  man apt
+  224  man apt-list
+  225  apt
+  226  apt list
+  227  apt
+  228  less /etc/apt/sources.list
+  229  apt list|grep cups
+  230  sudo aptitude install  cupsddk cupsddk-drivers
+  231  sudo apt install  cupsddk cupsddk-drivers
+  232  apt list|grep cups
+  233  less /etc/apt/sources.list
+  234   cd /media/ray/9016-4EF8
+  235   cd /media/ray/9016-4EF8/DCIM/164CANON
+  236  history|gtrep muon
+  237  history|grep muon
+  238  kdesudo muon-updater
+  239  sudo shutdown -r now
+  240  ls
+  241  cd vmware-tools-distrib
+  242  ls
+  243  ./vmware-install.pl 
+  244  sudo ./vmware-install.pl 
+  245  sudo shutdown now
+  246  kdesudo muon-updater
+  247  kdesudo muon
+  248  cd Downloads/
+  249  ls *.deb
+  250  sudo dpkg -i uex_15.0.0.11_amd64.deb 
+  251  sudo dpkg -i google-chrome-stable_current_amd64.deb 
+  252  sudo apt-get install libappindicator1
+  253  sudo apt-get update
+  254  sudo apt-get upgrade
+  255  sudo apt-get autoremove
+  256  sudo apt-get upgrade
+  257  ls
+  258  cd Downloads/
+  259  ls
+  260  ls *.iso
+  261  ls -als *.iso
+  262  sha256sum kubuntu-14.10-desktop-amd64.iso 
+  263  sha256sum kubuntu-14.10-desktop-amd64(1).iso 
+  264  sha256sum "kubuntu-14.10-desktop-amd64(1).iso" 
+  265  sudo cpuid 0
+  266  man traceroute
+  267  dig www.cmcf-oignies.com
+  268  ifconfig
+  269  man ifconfig
+  270  netstat
+  271  man arp
+  272  arp -v -n
+  273  nslookup www.oracle.com
+  274  tracert 81.253.149.14
+  275  traceroute 81.253.149.14
+  276  man nslookup
+  277  nslookup www.oracle.com 80.10.246.7
+  278  man dig
+  279  dig @80.10.246.7 www.oracle.com
+  280  man dig
+  281  dig www.cmcf-oignies.com
+  282  whois cmcf-oignies.fr
+  283  whois cmcf-oignies.com
+  284  strings GS8000_FW_20121203_GPS_V108G82AK
+  285  strings amboot_kernel_romfs_dsp_release.elf 
+  286  ls FW*
+  287  cd FW
+  288  ls
+  289  cd FW/
+  290  ls
+  291  cd Downloads/
+  292  strings amboot_kernel_romfs_dsp_release.elf 
+  293  dir yam*
+  294  dir
+  295  cd /Downloads/GS8000_FW_20121203_GPS_V108G82AK
+  296  cd GS8000_FW_20121203_GPS_V108G82AK/
+  297  cd FW
+  298  ls
+  299  strings yamaha.bin
+  300  history
+  301  kdesudo muon-updater
+  302  sudo shutdown -h now
+  303  cd /etc
+  304  ls ap*
+  305  cd apt
+  306  ls
+  307  less sources.list
+  308  traceroute sip.aql.com
+  309  man netcat
+  310  man nmap
+  311  ps
+  312  ps -alx
+  313  q
+  314  netstat -tulpn | grep :80
+  315  sudo netstat -tulpn | grep :80
+  316  sudo netstat -tulpn | grep :5060
+  317  nc -zv nat1.aql.com 5082
+  318  nc -zv nat1.aql.com 5082-5083
+  319  traceroute nat1.aql.com
+  320  nslookup
+  321  traceroute sip.aql.com
+  322  nc -zv sip.aql.com 5060-5062
+  323  nmap -sU -p5060 sip.aql.com
+  324  sudo apt-get install nmap
+  325  nmap -sU -p5060 sip.aql.com
+  326  sudo nmap -sU -p5060 sip.aql.com
+  327  sudo nmap -sS -p5060 sip.aql.com
+  328  man stun
+  329  stun -v stun.ekiga.net
+  330  sudo apt-get install stun
+  331  stun -v stun.ekiga.net
+  332  stun -v stun.ipvideotalk.com
+  333  man stun
+  334  man linphone
+  335  linphone
+  336  sudo apt-get install linphone
+  337  man linphone
+  338  linphone
+  339  history
+  340  kdesudo muon-updater
+  341  history|grep shut
+  342  sudo shutdown -r now
+  343  history
+  344  sudo shutdown -r now
+  345  df
+  346  ssh linuxtwo
+  347  chmod +x vmware-tools-distrib/vmware-install.pl 
+  348  pwd
+  349  ./vmware-tools-distrib/vmware-install.pl 
+  350  sudo ./vmware-tools-distrib/vmware-install.pl 
+  351  history
+  352  history|grep shutdo
+  353  sudo shutdown -h now
+  354  nslookup smtp-msa.orange.fr
+  355  nslookup smtp.orange.fr
+  356  ifconfig
+  357  inet
+  358  find ifconfig
+  359  whereis ifconfig
+  360  ./sbin/ifconfig
+  361  /sbin/ifconfig
+  362  whereis ifconfig
+  363  su
+  364  cd /usr/mozilla/plugins
+  365  cd /usr/lib/mozilla/plugins
+  366  sudo mv flashplugin-alternative.so flashplugin-alternativedotso.ray
+  367  sudo ls ~/Downloads
+  368  sudo ls ~/Downloads/install_flash_player_11_linux.x86_64
+  369  sudo ls ~/Downloads/install_flash_player_11_linux.x86_64(1)
+  370  sudo ls ~/Downloads/install_flash_player_11_linux.x86_64/(1/)
+  371  sudo ls ~/Downloads/install_flash_player_11_linux.x86_64\(1\)
+  372  sudo cp ~/Downloads/install_flash_player_11_linux.x86_64\(1\)/libflashplayer.so .
+  373  sudo cp -r usr/* /usr
+  374  sudo shutdown -h now
+  375  nano fred.txt
+  376  nano ben.txt
+  377  less ben.txt
+  378  ld
+  379  ls
+  380  telnet linuxtwo
+  381  ssh linuxtwo
+  382  `exec <&- 2>&-; which md5sum || type md5sum`
+  383  exec <&- 2>&-; which md5sum || type md5sum
+  384  ssh linuxtwo
+  385  exit
+  386  ls -als
+  387  su
+  388  su fluffkin27
+  389  su
+  390  ls lib*
+  391  sudo cd ~/Downloads/install_flash_player_11_linux.x86_64\(2\)/libflashplayer.so .
+  392  sudo cp ~/Downloads/install_flash_player_11_linux.x86_64\(2\)/libflashplayer.so .
+  393  ifconfig
+  394  dpkg --get-selections
+  395  dpkg --get-selections>packages.txt
+  396  less packages.txt
+  397  man dpkg
+  398  cd /var/log
+  399  ls dp*
+  400  ls -alx dp*
+  401  ls -A dp*
+  402  ls -ALX dp*
+  403  less dpkg.log
+  404  less dpkg.log.1
+  405  tail dpkg.log.1
+  406  man ls
+  407  ls -1
+  408  man ls
+  409  ls -1l
+  410  dmidecode
+  411  sudo dmidecode
+  412  sudo dmidecode -t 16
+  413  man dmidecode
+  414  sudo shutdown -h now
+  415  cd Downloads/
+  416  sudo dpkg -i dropbox_2015.02.12_amd64.deb 
+  417  ls
+  418  history
+  419  history|tail
+  420  history|less
+  421  kdesudo muon-updater
+  422  man logge
+  423  man logger
+  424  logger -n linuxtwo.heuchin.bingen.org message from minime
+  425  man logger
+  426  logger -n linuxtwo.heuchin.bingen.org message from minime
+  427  man logger
+  428  logger -d -n linuxtwo.heuchin.bingen.org message from minime
+  429  ifconfig
+  430  logger -d -n linuxtwo.heuchin.bingen.org message from minime
+  431  man logger
+  432  man tcpick
+  433  tcpextract
+  434  history|grep muon
+  435  man muon
+  436  cd Downloads/
+  437  ls
+  438  cd tcpick-0.2.1/
+  439  ./configure
+  440  ls
+  441  less install.doc
+  442  cd doc
+  443  ls
+  444  cd ..
+  445  ./configure
+  446  kmenuedit
+  447  cd  $KDE_DIR/share/config
+  448  ifconfig
+  449  ps -eo euser,ruser,suser,fuser,f,comm,label
+  450  man killall
+  451  man pkill
+  452  pgrep -g 0
+  453  pgrep
+  454  man pgreap
+  455  man pgrep
+  456  pgrep -u ray
+  457  man pgrep
+  458  pgrep -ua ray
+  459  pgrep -u ray -a
+  460  ifconfig
+  461  exit
+  462  ssh linuxtwo
+  463  teamviwer --daemon start
+  464  teamviewer --daemon start
+  465  sudo teamviewer --daemon start
+  466  history
+  467  ssh linuxtwo
+  468  history
+  469  kdesudo muon-updater
+  470  sudo shutdown -h now
+  471  sudo ./vmware-install.pl 
+  472  sudo shutdown -r now
+  473  java --version
+  474  telnet
+  475  telnet speedtouch
+  476  ssh mainrouter
+  477  telnet mainrouter
+  478  telnet speedtouch
+  479  ssh linuxtwo
+  480  ssh tigru
+  481  telnet tigru
+  482  lscpu
+  483  exit
+  484  java --version
+  485  man java
+  486  java -showversion
+  487  whereis java
+  488  cd /usr/bin/java
+  489  cd /usr/lib
+  490  ls
+  491  ls j*
+  492  apt-cache stats
+  493  ssh linuxtwo
+  494  exit
+  495  kdesudo muon-updater
+  496  man shuf
+  497  cat /dev/urandom| tr -dc 'a-zA-Z0-9' | fold -w 10| head -n 4
+  498  cat /dev/random| tr -dc 'a-zA-Z0-9' | fold -w 10| head -n 4
+  499   cd /
+  500   cd /home/ray
+  501  man tree
+  502  man pstree
+  503  pstree -a
+  504  pstree -a|grep file
+  505  ps
+  506  man ps
+  507  ps a
+  508  ps e
+  509  top
+  510  cd /etc
+  511  ls
+  512  cd xdg
+  513  ls
+  514  cd autostart
+  515  ls
+  516  ps d
+  517  ps e
+  518  ps a
+  519  ps A
+  520  ps -e
+  521  ps -e|grep gconfd
+  522  man tree
+  523  man pstree
+  524  pstree
+  525  exit
+  526  sudo apt-get update
+  527  s    udo apt-get install vlc browser-plugin-vlc
+  528  sudo apt-get install vlc browser-plugin-vlc
+  529  sudo apt-get autoremove
+  530  vlc
+  531  sudo apt-get install libdvdread4
+  532  sudo /usr/share/doc/libdvdread4/install-css.sh
+  533  vlc
+  534  ssh linuxtwo
+  535  exit
+  536  ls *.bundle
+  537  man chmod
+  538  whereis kate
+  539  whereis ka
+  540  whereis ka*
+  541  ssh linuxtwo
+  542  sudo shutdown -h now
+  543  ssh linuxtwo
+  544  exit
+  545  ssh speedtouch
+  546  telnet speedtouch
+  547  .
+  548  telnet speedtouch
+
+  553  php --version
+  564  php agenda_english.php
+  571  php agenda_english.php>temp.htm
+  572  php agenda.php>temp.htm
+  573  php agenda_english.php>temp.htm
+  574  php agenda.php>temp.htm
+  575  php agenda_english.php>temp.htm
+  591  php agenda_english.php>../temp.htm
+  592  locale -a
+  593  php var_dump( setlocale(LC_TIME, "fr_FR") );
+  594  php
+  595  man php
+  596  php --interactive
+  597  php agenda_english.php>../temp.htm
+  598  php -r "echo htmlentities('£hello', null, 'utf-8');"
+  599  php agenda_english.php>../temp.htm
+  647  git config --global user.name "Ray Foulkes"
+  648  git config --global user.email ray.foulkes@shay-mwa.com
+  649  cd source
+  651  git init
+  652  git add *
+  655  cd websites/
+  656  cd cmcf/
+  657  cd source
+  658  ls
+  659  git commit -m "initial load of pre-production files"
+  661  git status -u
+  662  git remote -v
+  663  git branch
+  665  git config --global core.excludesfile ~/.gitignore_global
+  678  touch ~/.gitignore_global 
+  687  git status -u
+  688  history>~/buildcommands.txt

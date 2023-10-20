@@ -1,0 +1,183 @@
+/* style.css
+NO constants in Css. 
+Hence mainbody.margin-left+mainbody.width = totalbody (100%)
+selector.width+selector.padding-left+divider.width+rightbody.width+rightbody.padding-left< totalbody
+*/
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: blue;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip .tooltiptext {
+  width: 120px;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* body { background: #FFFFCC} */
+body { background: #F2F5F7}
+/* body { background: #FFFF66} */
+p {font-size: 18px}
+/*the next two lines have to add up to less than 100% */
+#leftbanner{float:left; width: 30%; min-width: 200px}
+#originalcmcf{float:right; width: 69%}
+/* .home{border:0; margin:0; padding:0} */
+.home{width:100%; display: block; margin: auto auto; min-width: 100px}
+.mainbody{float:left; margin-left: 2%; width: 98%}
+/* The selector is a class solely for the menu div on the LHS of the page */
+.selector{float:left; margin-top: 40px; width:23%;border-right: 5px  solid black}
+/* The following divider is in place of a vertical rule image. It is a very narrow div filled with black. */
+.divider{float:left; margin-top: 30px; width:0.4%; height:500px; background: black}
+/* Rightbody is the main info section of the site */
+.rightbody{position:relative; left:-5px;margin-top: 40px; float:left; width:72.6%; padding-left: 2%;border-left: 5px solid black}
+.subleft{float:left; width: 100%}
+.subright{float:right; width: 100%}
+.minimage{float: right; margin-left: 5px; width:164px }
+.rightheader{font-weight: bold;font-size:x-large; text-decoration: underline}
+.newsheader{height: 100px; font-weight: bold;font-size:xx-large;  display: flex; justify-content: center; align-items: center; text-align: cente}
+.annotatedpic {
+  position: relative;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.annotatedpic img {vertical-align: middle;}
+
+.annotatedpic .content {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px 20px 10px 20px ;
+}
+
+a.onblack:link {color:pink;}
+a.onblack:visited {color:orange;}
+a.onblack:hover {color:green;}
+
+
+
+
+.copyright{ text-align:center}
+.footer{float:left; margin-left: 2%; width:98%;}
+.footnote{margin-left: 23%; list-style-type: decimal; font-size: smaller}
+/* .menu1{list-style-image: URL('images/roue2.png'); font-weight: bold; font-size: 32px; */
+.menu1{list-style-type: none; margin: 0; padding:0; font-weight: bold; font-size: 2.1vw;
+	font-family: "Times New Roman", serif;}
+.menu1 li img {max-height:1em;}
+/*.menu1{list-style-type: none; margin: 0; padding:0; font-weight: bold; font-size: 32px;
+	font-family: "Times New Roman", serif;} */
+.menu2{list-style-type: none; margin: 0; padding-left:30px; font-weight: bold; font-size: 1.7vw;
+	font-family: "Times New Roman", serif;}
+/*.menu2{list-style-type: none; margin: 0; padding-left:30px; font-weight: bold; font-size: 20px;
+	font-family: "Times New Roman", serif;}*/
+.menu3{list-style-type: none; margin: 0; padding-left:30px; font-weight: bold; font-size: 1.2vw;
+	font-family: "Times New Roman", serif;}
+.off{visibility: hidden}
+.calendar{border-width:2px; border-style:outset; padding:3px; table-layout:fixed; text-align:center; width:99%}
+.calendar table{border-width:0; border-style:none; padding:0; border-spacing:0; border-collapse:collapse;table-layout:fixed; text-align:center; width:100%}
+.calendar td { padding:10px; border-width:1px; border-style:inset}
+.emphasis {font-weight: bolder}
+div ul li a{text-decoration: none;}
+div ul li a img{position:relative; top:0.3em; text-decoration:none; border:0; }
+div ul li ul li a{text-decoration: none;}
+.flag{max-height: 1em; position:relative; top:0}
+.splash{position:relative;line-height:200%; border-style:ridge; border-color:blue; background-color:#81F7F3; text-align:center; margin-left:auto; margin-right:auto; margin-top: 2em; margin-bottom: 2em}
+.allbelow{display: block; clear: both; margin: 0; visibility: hidden;}
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+#masthead{min-height: 150px; float:left; width: 99%; border: thick  solid black}
+#cmcflogo{float:left; width: 25%;margin-top:2px;margin-bottom:2px;}
+.entrytitle{font-weight: bold; font-size: 2.5vw; font-family: "Times New Roman", serif;  color: #371C00;margin: 10px}
+.entrytitle-english{font-weight: bold; font-size: 2.5vw; font-family: "Times New Roman", serif;  color: #371C00;margin: 10px}
+.othertitles{font-weight: bold; font-size: 2.1vw; font-family: "Times New Roman", serif;  color: #371C00;}
+.maintitle{float:left; width: 50%; font-weight: bold; font-size: 2.1vw; font-family: "Times New Roman", serif;  color: #371C00;
+     	text-align:center ;margin: auto;}     	
+/* .maintitle{float:left; width: 50%; font-weight: bold; font-size: 32px; font-family: "Times New Roman", serif;  color: #371C00;
+     	text-align:center ;margin-top: 25px;} */
+.month{font-size: 1.5vw}
+.cmcfacebook{font-size: 2.1vw;float: right; width:25%}
+.fb-page{font-size: 1vw}
+.fb_iframe_widget{float:right} /*Needed otherwise left float despite the span control above*/
+
+.fb-page span{float:right !important} /*force  the span to float right also*/
+.buttoncontainer { /* used for add to calendar buttons.
+  width: 100%;
+  /* Center child horizontally*/
+  display: flex;
+  justify-content: center;
+}
+/* #entrypage{text-align: center; background:#ffffff url('images/Voeux2012-CMCFbis.jpg'); background-repeat:no-repeat;
+background-position:center top; } */
+/*#entrypage{text-align: center; background:#ffffff url('images/119reseau1cmcf-oignies28-08-11bis.jpg'); background-repeat:repeat-x;}*/
+/* #entrypage{text-align: center; background:#ffffff url('images/Voeux2013-CMCFbis.jpg'); background-repeat:no-repeat;
+background-position:center top; } */
+/* #entrypage{text-align: center; background:#ffffff url('images/ludlow%20231C.JPG'); background-repeat:repeat-x; } */
+/*#entrypage{text-align: center; background-image: url('images/61_Vapeur_vive_Oignies_29-08-10.jpg'); background-repeat:no-repeat center center;
+ min-height: 100%;*/
+/*#entrypage{text-align: center; background-image: url('images/background.png'); background-repeat:no-repeat center center;
+ min-height: 100%; */
+ #entrypage{text-align: center; background-image: url('images/CMCF_Festival2018stripped.jpg'); background-repeat:no-repeat center center;
+ min-height: 100%;
+/*  min-width: 1024px;*/
+  text-shadow: 1px 1px 0  #FFFF66;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;} 
+/* #entrypage{text-align: center; background:#ffffff ;}*/
+#leftboxentry{float:left; width: 15%}
+#rightboxentry{float:right; width: 49%}
+#credits{font-weight: normal; text-align:center; font-size: 2vw; margin-top: 10vh; font-family: "Times New Roman";}
+
+#slideshow {list-style:none; color:#fff}
+#slideshow span {display:none}
+#wrapper {width:506px; margin:50px auto; display:none}
+#wrapper * {margin:0; padding:0}
+/* RF changed colour below from 000 to ffffcc which is background for cmcf */
+#fullsize {position:relative; width:500px; height:300px; padding:2px; border:1px solid #ccc; background:#FFFFCC}
+/* RF changed colour below from fff to 000 to show black chars on background of ffffcc which I changed from 000 both opacity and filter are in, one for firefox, other for IE*/
+#information {position:absolute; bottom:0; width:500px; height:0; background:#FFFFCC; color:#000; overflow:hidden; z-index:200; opacity:.5; filter:alpha(opacity=50)}
+#information h3 {padding:4px 8px 3px; font-size:14px}
+#information p {padding:0 8px 8px}
+#image {width:500px}
+#image img {position:absolute; z-index:25; width:auto}
+.imgnav {position:absolute; width:25%; height:306px; cursor:pointer; z-index:150}
+#imgprev {left:0; background:url(images/left.gif) left center no-repeat}
+#imgnext {right:0; background:url(images/right.gif) right center no-repeat}
+#imglink {position:absolute; height:306px; width:100%; z-index:100; opacity:.4; filter:alpha(opacity=40)}
+.linkhover {background:url(images/link.gif) center center no-repeat}
+#thumbnails {margin-top:15px}
+#slideleft {float:left; width:20px; height:81px; background:url(images/scroll-left.gif) center center no-repeat; background-color:#FFFFCC}
+#slideleft:hover {background-color:#333}
+#slideright {float:right; width:20px; height:81px; background:#FFFFCC url(images/scroll-right.gif) center center no-repeat}
+#slideright:hover {background-color:#333}
+#slidearea {float:left; position:relative; width:456px; margin-left:5px; height:81px; overflow:hidden}
+#slider {position:absolute; left:0; height:81px}
+#slider img {cursor:pointer; border:1px solid #666; padding:2px}

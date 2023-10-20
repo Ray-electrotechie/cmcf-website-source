@@ -1,0 +1,7 @@
+#!/bin/bash
+# Usage: ./createhtml filename ext (no extension on filename, .php is sought and .ext is generated.)
+#
+filename=$1
+extension=$2
+echo "doing $filename"
+eval  php "$filename.php > ../$filename.$extension"

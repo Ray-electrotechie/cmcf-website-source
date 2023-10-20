@@ -1,0 +1,239 @@
+    1  apt-get update
+    2  sudo apt-get update
+    3  sudo apt-get upgrade
+    4  ls
+    5  ps
+    6  ps -als
+    7  ps -a
+    8  ps -l
+    9  ps --help
+   10  ps -als
+   11  ps -A
+   12  ps -Als
+   13  sudo systemctl status httpd
+   14  sudo apt-get install apache2
+   15  sudo systemctl status httpd
+   16  sudo systemctl
+   17  sudo systemctl --type=service
+   18  sudo 
+   19  sudo systemctl --type=service
+   20  sudo systemctl status apache2
+   21  df
+   22  df -H
+   23  passwd
+   24  login ray_foulkes
+   25  su
+   26  ls -als
+   27  cd .ssh
+   28  ls
+   29  ls -als
+   30  touch authorized_keys
+   31  ls
+   32  nano authorized_keys 
+   33  users
+   34  ls
+   35  cd .ssh
+   36  ls
+   37  ls -als
+   38  cp ../rayspublicputtykey.txt authorized_keys
+   39  ls
+   40  less authorized_keys 
+   41  rm authorized_keys 
+   42  cp ../onelinepublickey.txt authorized_keys
+   43  exit
+   44  sudo 
+   45  sudo 
+   46  bash
+   47  sudo nano /etc/ssh/sshd_config
+   48  ls -als
+   49  cd .ssh
+   50  ls -als
+   51  chmod 700 authorized_keys 
+   52  ls -als
+   53  cd ..
+   54  chmod 700 .ssh
+   55  cd .ssh
+   56  chmod 600 authorized_keys 
+   57  ls -als
+   58  less authorized_keys 
+   59  ssh-keygen -l -f authorized_keys 
+   60  whoami
+   61  ls
+   62  less index.html 
+   63  ssh-keygen -l -f authorized_keys
+   64  cd .ssh
+   65  ssh-keygen -l -f authorized_keys
+   66  users
+   67  cd /var/www
+   68  ls -als
+   69  cd html
+   70  ;s
+   71  ls
+   72  ls -als
+   73  ps -Als
+   74  ps -a
+   75  ps -A
+   76  top
+   77  apt-get update
+   78  sudo apt-get update
+   79  sudo apt-get upgrade
+   80  sudo apt autoremove
+   81  sudo apt-get update
+   82  sudo apt-get upgrade
+   83  su
+   84  cd /var
+   85  ls
+   86  cd www
+   87  ls
+   88  ls -Al
+   89  getent group
+   90  getent group | cut -d: -f1
+   91  cat /etc/passwd | awk -F':' '{ print $1}' | xargs -n1 groups
+   92  ls -l
+   93  groups
+   94  sudo usermod -a -G www-data ray_foulkes
+   95  groups
+   96  /var/www$ getent group | cut -d: -f1
+   97  groups
+   98  exit
+   99  sudo do-release-upgrade
+  100  top
+  101  exit
+  102  sudo iptables -I INPUT -p tcp --dport 1022 -j ACCEPT
+  103  ls
+  104  sudo apt-get update
+  105  sudo apt-get upgrade
+  106  whoami
+  107  users
+  108  groups
+  109  cd /var/www/html
+  110  ls -l
+  111  cd ..
+  112  umask
+  113  cd /etc/apache2
+  114  ls
+  115  ls -als
+  116  cd sites-available/
+  117  ls
+  118  less 000-default.conf 
+  119  ls -als
+  120  less /etc/group
+  121  cd ..
+  122  ls
+  123  less apache2.conf 
+  124  cd /var/www
+  125  ls
+  126  sudo mkdir cmcf
+  127  ls
+  128  ls -als
+  129  groups
+  130  /var/www$ getent group | cut -d: -f1
+  131  getent group | cut -d: -f1
+  132  getent group | cut -d: -f1 |sort
+  133  ps -A
+  134  ps -Al
+  135  sudo ps -ef
+  136  sudo groupadd www-web
+  137  ls
+  138  sudo chgrp www-web html
+  139  ls -als
+  140  cd html
+  141  mkdir images
+  142  sudo chmod g+w html
+  143  cd ..
+  144  sudo chmod g+w html
+  145  ls -als
+  146  cd html
+
+
+  
+I decided to continue with the standard single site route of /var/www/html and to avoid changing any apache2 config files until I really had to.
+To permit me to add files I created a new group: www-web:
+sudo groupadd www-web
+Then I added myself to that group:
+sudo usermod -a -G www-web ray_foulkes
+Note above that the -a is imperative else it removes other groups and -G not -g to avoid changing your master group.
+Then I had to log out and back in again.
+Then I changed the group of directory html to that group:
+sudo chgrp www-web html
+Then permitted members of that group to write to the html directory:
+sudo chmod g+w html
+Resulting in:
+  167  ray_foulkes@cmcf-1:/var/www$ ls -als
+  168  total 16
+  169  4 drwxr-xr-x  4 root root    4096 Feb  5 12:19 .
+  170  4 drwxr-xr-x 14 root root    4096 Feb  3 17:37 ..
+  171  4 drwxr-xr-x  2 root root    4096 Feb  5 12:19 cmcf
+  172  4 drwxrwxr-x  2 root www-web 4096 Feb  3 17:37 html
+then changed the group of the original index.html
+cd html
+sudo chgrp www-web index.html
+sudo chmod g+w index.html
+Then I renamed index.html to original_index.html and copied in a new html.
+
+Using the following line to the all group extant on the system:
+
+getent group | cut -d: -f1|sort
+I got:
+_chrony
+adm
+admin
+audio
+backup
+bin
+cdrom
+crontab
+daemon
+dialout
+dip
+disk
+fax
+floppy
+games
+gnats
+google-sudoers
+input
+irc
+kmem
+landscape
+list
+lp
+lxd
+mail
+man
+messagebus
+mlocate
+netdev
+news
+nogroup
+operator
+plugdev
+proxy
+ray_foulkes
+root
+rsa-key-20220203
+sasl
+shadow
+src
+ssh
+ssl-cert
+staff
+sudo
+sys
+syslog
+systemd-journal
+systemd-network
+systemd-resolve
+tape
+tty
+ubuntu
+users
+utmp
+uucp
+uuidd
+video
+voice
+www-data
+www-web
+
+www-data is the user and group that apache2 runs under.

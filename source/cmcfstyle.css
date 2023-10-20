@@ -1,0 +1,85 @@
+/* style.css
+NO constants in Css. 
+Hence mainbody.margin-left+mainbody.width = totalbody (100%)
+selector.width+selector.padding-left+divider.width+rightbody.width+rightbody.padding-left< totalbody
+*/
+body { background: #FFFFCC} 
+/* body { background: #FFFF66} */
+p {font-size: 18px}
+/*the next two lines have to add up to less than 100% */
+#leftbanner{float:left; width: 30%}
+#originalcmcf{float:right; width: 69%}
+/* .home{border:0; margin:0; padding:0} */
+.home{width:100%; display: block; margin: auto auto}
+.mainbody{float:left; margin-left: 2%; width: 98%}
+/* The selector is a class solely for the menu div on the LHS of the page */
+.selector{float:left; margin-top: 40px; width:23%;border-right: 5px  solid black}
+/* The following divider is in place of a vertical rule image. It is a very narrow div filled with black. */
+.divider{float:left; margin-top: 30px; width:0.4%; height:500px; background: black}
+/* Rightbody is the main info section of the site */
+.rightbody{position:relative; left:-5px;margin-top: 40px; float:left; width:72.6%; padding-left: 2%;border-left: 5px solid black}
+.subleft{float:left; width: 100%}
+.subright{float:right; width: 100%}
+.minimage{float: right; margin-left: 5px; width:164px }
+.rightheader{font-weight: bold;font-size:x-large; text-decoration: underline}
+.copyright{ text-align:center}
+.footer{float:left; margin-left: 2%; width:98%;}
+.footnote{margin-left: 23%; list-style-type: decimal; font-size: smaller}
+/* .menu1{list-style-image: URL('images/roue2.png'); font-weight: bold; font-size: 32px; */
+.menu1{list-style-type: none; margin: 0; padding:0; font-weight: bold; font-size: 2.1vw;
+	font-family: "Times New Roman", serif;}
+.menu1 li img {max-height:1em;}
+/*.menu1{list-style-type: none; margin: 0; padding:0; font-weight: bold; font-size: 32px;
+	font-family: "Times New Roman", serif;} */
+.menu2{list-style-type: none; margin: 0; padding-left:30px; font-weight: bold; font-size: 1.7vw;
+	font-family: "Times New Roman", serif;}
+/*.menu2{list-style-type: none; margin: 0; padding-left:30px; font-weight: bold; font-size: 20px;
+	font-family: "Times New Roman", serif;}*/
+.menu3{list-style-type: none; margin: 0; padding-left:30px; font-weight: bold; font-size: 1.2vw;
+	font-family: "Times New Roman", serif;}
+.off{visibility: hidden}
+.calendar{border-width:2px; border-style:outset; padding:3px; table-layout:fixed; text-align:center; width:99%}
+.calendar table{border-width:0; border-style:none; padding:0; border-spacing:0; border-collapse:collapse;table-layout:fixed; text-align:center; width:100%}
+.calendar td { padding:10px; border-width:1px; border-style:inset}
+.emphasis {font-weight: bolder}
+div ul li a{text-decoration: none;}
+div ul li a img{position:relative; top:0.3em; text-decoration:none; border:0; }
+div ul li ul li a{text-decoration: none;}
+.flag{max-height: 1em; position:relative; top:0}
+.splash{position:relative;line-height:200%; border-style:ridge; border-color:blue; background-color:#81F7F3; text-align:center; margin-left:auto; margin-right:auto; margin-top: 2em; margin-bottom: 2em}
+.allbelow{display: block; clear: both; margin: 0; visibility: hidden;}
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+#masthead{min-height: 150px; float:left; width: 99%; border: thick  solid black}
+#cmcflogo{float:left; width: 25%}
+.entrytitle{font-weight: bold; font-size: 3vw; font-family: "Times New Roman", serif;  color: #371C00;margin: 10px}
+.entrytitle-english{font-weight: bold; font-size: 2.5vw; font-family: "Times New Roman", serif;  color: #371C00;margin: 10px}
+.othertitles{font-weight: bold; font-size: 2.1vw; font-family: "Times New Roman", serif;  color: #371C00;}
+.maintitle{float:left; width: 50%; font-weight: bold; font-size: 2.1vw; font-family: "Times New Roman", serif;  color: #371C00;
+     	text-align:center ;margin: auto;}     	
+/* .maintitle{float:left; width: 50%; font-weight: bold; font-size: 32px; font-family: "Times New Roman", serif;  color: #371C00;
+     	text-align:center ;margin-top: 25px;} */
+.cmcfacebook{font-size: 2.1vw;float: right; width:25%}
+.fb-page{font-size: 1vw}
+.fb_iframe_widget{float:right} /*Needed otherwise left float despite the span control above*/
+.fb-page span{float:right !important} /*force  the span to float right also*/
+/* #entrypage{text-align: center; background:#ffffff url('images/Voeux2012-CMCFbis.jpg'); background-repeat:no-repeat;
+background-position:center top; } */
+/*#entrypage{text-align: center; background:#ffffff url('images/119reseau1cmcf-oignies28-08-11bis.jpg'); background-repeat:repeat-x;}*/
+/* #entrypage{text-align: center; background:#ffffff url('images/Voeux2013-CMCFbis.jpg'); background-repeat:no-repeat;
+background-position:center top; } */
+/* #entrypage{text-align: center; background:#ffffff url('images/ludlow%20231C.JPG'); background-repeat:repeat-x; } */
+#entrypage{text-align: center; background-image: url('images/61_Vapeur_vive_Oignies_29-08-10.jpg'); background-repeat:no-repeat center center;
+ min-height: 100%;
+/*  min-width: 1024px;*/
+  text-shadow: 1px 1px 0  #FFFF66;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;} 
+/* #entrypage{text-align: center; background:#ffffff ;}*/
+#leftboxentry{float:left; width: 49%}
+#rightboxentry{float:right; width: 49%}
+#credits{font-weight: normal; text-align:center; font-size: 2vw; margin-top: 10vh; font-family: "Times New Roman";}

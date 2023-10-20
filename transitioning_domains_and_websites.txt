@@ -1,0 +1,50 @@
+Domain transfer of ownership.
+
+Internet domain names, in our case cmcf-oignies.com and cmcf-oignies.fr, Are "rented" by someone or some organisation. At the moment, these are both rented by Ray Foulkes but can be transfered to other people or oranisations.
+The "top level domains" such as .com, .fr are under the control of individual organisations. .com is Verisign and .fr is afnic. Domain users do not deal directly with these top organisations.
+Internet domain names (the domain name system (DNS)) are managed by "registrars". For a top level domain (.fr, .uk, .com) there may be many registrars.
+
+Registrars are authorised sell domain names.
+
+In order to function i.e. so that someone can find which computer supports www.cmcf-oignies.com, Domains have to be managed by an organisation running a Domain Name Server.
+
+That is the piece of software which is authoritative i.e. "the boss" for that domain name e.g. cmcf-oignies.com. It may, or may not be, the registrar from where the domain was purchased.
+
+At the moment cmcf-oignies.com is managed by the registrar called "Dynu".
+At the moment cmcf-oignies.fr is managed by the registrar Nordnet (Orange).
+There are many registrars offering to sell domains in both .com and .fr.
+
+The DNS system manages access to the web site (www) via both IPV4 and IPV6 (the latter not yet used for cmcf), references to email servers to permit email addresses such as secretaire@cmcf-oignies.com and various other items of information.
+
+Someone, somewhere, somehow has to pay for this.
+
+Domain names generally are rented annually. If the fees are not paid then (depending on the registrar) the name is available to purchase by anyone (potentially).
+Some domain names have few checks on who purchases them unless the name is worlwide e.g. Amason.com would probably be rejected. .fr domains are more closely policed to ensure that the person purchasing a name has some claim to it.
+
+For cmcf-oignies.fr I pay about 35 Euros per year  to Nordnet for "pack relais basic" which offers domain re-registration and the DNS server which is authoritative for cmcf-oignies.fr. They do not handle email for cmcf-oignies.fr.
+For cmcf-oignies.com I pay $15 to Dynu for domain renewal and the dns server which is authoritative for cmcf-oignies. Dynu do not handle email for cmcf-oignies.com.
+
+For email for both domains, I use Duocircle. They are more expensive than some alternatives such as Dynu but manage our large quantity of spam better. I can review what is blocked by their filters. Less than 1 message in 100 is genuine.
+I pay $56 for email forwarding lite (5 addresses) for each domain. I have spf checks enabled to reduce the spam slightly.
+
+The domain registrations do not expire until October 2022. If the domains are transferred, whoever receives them will have to pay immediately and the existing payment will be lost.
+
+Transfering domains.
+
+CMCF can decide to cancel a domain to save money and administrative load. The only that has been widely publicised is www.cmcf-oignies.com. Both lead to the same website.
+
+Depending on how and where the new website it hosted, plus the DNS skills of whoever is managing the web server, there will be different options for transition between the old and new websites.
+
+First- a word of warning. Many "free" or cheap website hosting organisations may well ask for the domain ownership to be transfered to them. This is a BAD idea. Always, always keep the dns and webhost separate.
+If you pass control to the webhost, they then control, forever if they wish, the computers running your website, emails etc.
+It has been known for them to demand large sums of money to "sell" the DNS name. Possibly not for a poor organisation like CMCF but they may still demand money to hand it over. Look up "cybersquatting" for further information. .fr may be less of a problem than .com.
+
+If the website is hosted on a site that offers either a fixed IPv4 address or a long name of their choosing, then it is possible to refer to the site from a dns not owned by the webhost, depending on the co-operativeness of the webhost.
+
+Transition
+
+Once the new website is in a suitable condition to be open to the web, then tests can be carried out with references such as vvv.cmcf-oignies.com in order to validate that it functions to your satisfaction.
+Once you are ready to go live, then the existing site can be taken offline, the google server shut down, and the new site reference by www.cmcf-oignies.com and/or .fr.
+The changeover takes a few hours for the IP address to propagate through the Internet.
+
+Then, later on in the year, let me know when you want the domains and I will open them with a security key to permit you to obtain them and I will not try to renew them.
