@@ -9,6 +9,18 @@ selector.width+selector.padding-left+divider.width+rightbody.width+rightbody.pad
   display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
+.flyerimage{font-size: calc(12px + 1.0vw);
+}
+.siteentry {font-size: calc(12px + 1.5vw);
+}
+.guidedvisits {font-size: calc(12px + 1.0vw);
+}
+.gallery { font-size: calc(12px + 1.2vw);
+}
+.festivalannounce { font-size: calc(12px + 1.2vw);
+}
+.nextopen { font-size: calc(13px + 1.3vw);
+}
 
 /* Tooltip text */
 .tooltip .tooltiptext {
@@ -42,8 +54,7 @@ p {font-size: 18px}
 /*the next two lines have to add up to less than 100% */
 #leftbanner{float:left; width: 30%; min-width: 200px}
 #originalcmcf{float:right; width: 69%}
-/* .home{border:0; margin:0; padding:0} */
-.home{width:100%; display: block; margin: auto auto; min-width: 100px}
+.home{width:100%; display: block; margin: auto auto; min-width: 100px; }
 .mainbody{float:left; margin-left: 2%; width: 98%}
 /* The selector is a class solely for the menu div on the LHS of the page */
 .selector{float:left; margin-top: 40px; width:23%;border-right: 5px  solid black}
@@ -86,16 +97,17 @@ a.onblack:hover {color:green;}
 .footer{float:left; margin-left: 2%; width:98%;}
 .footnote{margin-left: 23%; list-style-type: decimal; font-size: smaller}
 /* .menu1{list-style-image: URL('images/roue2.png'); font-weight: bold; font-size: 32px; */
-.menu1{list-style-type: none; margin: 0; padding:0; font-weight: bold; font-size: 2.1vw;
+.menu1{list-style-type: none; margin: 0px; padding:0; font-weight: bold; font-size: min(2.1vw, 32pt);
 	font-family: "Times New Roman", serif;}
+ .menu1 li {margin-top: 0.5vh};
 .menu1 li img {max-height:1em;}
 /*.menu1{list-style-type: none; margin: 0; padding:0; font-weight: bold; font-size: 32px;
 	font-family: "Times New Roman", serif;} */
-.menu2{list-style-type: none; margin: 0; padding-left:30px; font-weight: bold; font-size: 1.7vw;
+.menu2{list-style-type: none; margin: 0px; padding-left: 1vw; font-weight: bold; font-size: 1.7vw;
 	font-family: "Times New Roman", serif;}
 /*.menu2{list-style-type: none; margin: 0; padding-left:30px; font-weight: bold; font-size: 20px;
 	font-family: "Times New Roman", serif;}*/
-.menu3{list-style-type: none; margin: 0; padding-left:30px; font-weight: bold; font-size: 1.2vw;
+.menu3{list-style-type: none; margin: 0px; padding-left: 1.5vw; font-weight: bold; font-size: 1.2vw;
 	font-family: "Times New Roman", serif;}
 .off{visibility: hidden}
 .calendar{border-width:2px; border-style:outset; padding:3px; table-layout:fixed; text-align:center; width:99%}
@@ -151,9 +163,27 @@ background-position:center top; } */
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;} 
-/* #entrypage{text-align: center; background:#ffffff ;}*/
+
 #leftboxentry{float:left; width: 15%}
 #rightboxentry{float:right; width: 49%}
+.row {
+  display: flex;
+}
+
+/* Create two columns that sits next to each other */
+.column1 {
+  flex: 20%;
+  padding: 10px;
+
+}
+.column2 {
+  flex: 80%;
+  padding: 10px;
+
+}
+
+
+
 #credits{font-weight: normal; text-align:center; font-size: 2vw; margin-top: 10vh; font-family: "Times New Roman";}
 
 #slideshow {list-style:none; color:#fff}

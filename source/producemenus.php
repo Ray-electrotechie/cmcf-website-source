@@ -25,7 +25,7 @@ $basepadding = 2; /* how many spaces to tab out on ALL the menu items (pretty pr
 $opendates = array(array('2023-10-09',1,'normal','14:00','18:00'),
                    array('2024-04-13',2,'spring','10:00','18:00'),
                    array('2024-05-05',1,'normal','14:00','18:00'),
-                   array('2024-06-09',1,'normal','14:00','18:00'),
+                   array('2024-06-09',1,'specialevent','14:00','18:00'),
                    array('2024-07-14',1,'normal','14:00','18:00'),
                    array('2024-08-31',2,'summer','10:00','18:00'),
                    array('2024-09-21',2,'heritage','10:00','18:00'),
@@ -56,13 +56,11 @@ $menus = array(
                     'machinedextraction' => array(3, 2 , 0, "Machine d'extraction","machinedextraction.htm", "Winding machine",NULL),
 /*                    'gare' => array(3, 3 , 0, "Gare a quai","gare.htm", "Station platform",NULL), */
                'diary' => array(4, 0 , 0, "Agenda","agenda.htm","Diary","agenda_english.htm"),
-                   'festival23' => array(4, 1 , 0, "Festival 2023","festival2023francais.htm","Festival 2023","festival2023en.htm"),
-                   'festival12' => array(4, 2 , 0, "Festival 2012","festival2012fr.htm","Festival 2012","festival2012en.htm"),
-                    'festival11' => array(4, 3 , 0, "Festival 2011","festival2011francais.htm","Festival 2011","festival2011english.htm"),
-                    'festival09' => array(4, 4 , 0, "Festival 2009","festival2009francais.htm","Festival 2009","festival2009english.htm"),
-/*                      'festivals1' => array(4, 3 , 1, "Festival 2009","festival2009francais.htm","Festival 2009","festival2009english.htm"),
-                        'festivals2' => array(4, 3 , 2, "Festival 2009","festival2009francais.htm","Festival 2009","festival2009english.htm"), */
-/*                  'festival23' => array(4, 4 , 0, "Festival 2023","festival2023francais.htm","Festival 2023","festival2023en.htm"), */
+                   'festival24' => array(4, 1 , 0, "Festival 2024","festival2024francais.htm","Festival 2024","festival2024en.htm"),
+                   'festival23' => array(4, 2 , 0, "Festival 2023","festival2023francais.htm","Festival 2023","festival2023en.htm"),
+                   'festival12' => array(4, 3 , 0, "Festival 2012","festival2012fr.htm","Festival 2012","festival2012en.htm"),
+                   'festival11' => array(4, 4 , 0, "Festival 2011","festival2011francais.htm","Festival 2011","festival2011english.htm"),
+                   'festival09' => array(4, 5 , 0, "Festival 2009","festival2009francais.htm","Festival 2009","festival2009english.htm"),
                'news' => array(5, 0 , 0, "News","news.htm","News",NULL),
                'links' => array(6, 0 , 0, "Liens","lien.htm","Links",NULL),
                'infos' => array(7, 0 , 0, "Informations practiques","infos.htm","Where & who are we?","infos_english.htm"),
@@ -117,7 +115,7 @@ if ($lang == "en")
 <?php echo '  <title>'.'CMCF '.$title."</title>
   <meta http-equiv=\"content-type\" content=\"text/html; charset=iso-8859-1\">
   <link rel=\"stylesheet\" href=\"cmcfstyle.css\">
-  <link rel=\"stylesheet\" href=\"./assets/css/atcb.min.css\">
+<!--  <link rel=\"stylesheet\" href=\"./assets/css/atcb.min.css\"> -->
   <link rel=\"shortcut icon\" href=\"http://www.cmcf-oignies.fr/images/favicon.ico\" />
   <link rel=\"stylesheet\" type=\"text/css\" href=\"zoomwall.css\" />".$insertcalscript."
 </head>

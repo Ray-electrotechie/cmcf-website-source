@@ -53,7 +53,7 @@ include 'producemenus.php';
             <li>Six postal carriages containing the museum dedicated to the history of travelling sorting offices.</li>
             <li>A mine museum in the old mine training school.</li>
           </ul>
-      <p> Festival Entrance fees: Adult 4&euro;, Child (6 to 16) 2&euro;, Free admission - Less than 6 years (accompanied).          
+    <!--  <p> Festival Entrance fees: Adult 4&euro;, Child (6 to 16) 2&euro;, Free admission - Less than 6 years (accompanied).-->
             
        <hr class=allbelow>
        <!--<h1>Our next "normal" open Sunday will be 9th July 2023  from 14h00 to 18h00</h1> -->
@@ -85,76 +85,104 @@ include 'producemenus.php';
           switch ($eventdate[2])
              {
               case "normal":
-                $button_text = 'Add CMCF open day to diary';
+                $button_text = 'Add CMCF open day to your diary';
                 $button_subject = 'Visit: CMCF open day';
                 break;
               case "spring":
-                $button_text = 'Add CMCF spring festival to diary';
+                $button_text = 'Add CMCF spring festival to your diary';
                 $button_subject = 'Visit: CMCF spring Festival';
                 break;
               case "summer":
-                $button_text = 'Add CMCF summer festival to diary';
+                $button_text = 'Add CMCF summer festival to your diary';
                 $button_subject = 'Visit: CMCF summer festival';
+                $more_info=<<<EOD
+      <div>
+            <img src="images/CMCF_Festival2024_miniature.jpg" width="30%" onClick="parent.location='images/CMCF_Festival2024.jpg'" alt="Festival of steam 2024" style="float: left; margin-right: 30px">
+            <h2>Click the image to enlarge it</h2>
+          <hr class=allbelow>   
+        </div>
+EOD;
                 break;
               case "heritage":
-                $button_text = 'Add CMCF heritage days to diary';
+                $button_text = 'Add CMCF heritage days to your diary';
                 $button_subject = 'CMCF is open for Heritage days';
                 break;
+              case "specialevent":
+                $button_text = 'Add Get out of the routine to your diary';
+                $button_subject = 'CMCF is open for "get out of the routine" event';
+                $more_info=<<<EOD
+<!--      <div style="float:left"> for some reason this screws up all button or image clickons -->
+      <div>
+            <img src="images/sortez_train_train_fiche_mini.jpg" width="30%" onClick="parent.location='images/sortez_train_train_fiche_a4.jpg'" alt="Sortez du train-train" style="float: left; margin-right: 30px">
+            <h2>CMCF is involved in a sepecial event "Get out of routine". <a href="images/sortez du train-train_flyer.pdf">Download the complete brochure</a> in .pdf form. It is only available  in French. </h2>
+            <h2>Click any image to enlarge it</h2>
+            <br><img src="images/train-train01_mini.jpg" width="25%" onClick="parent.location='images/sortez_du_train-train_flyer1.jpg'" alt="Sortez du train-train flyer p1" style="float: left; margin-right: 30px">
+                <img src="images/train-train02_mini.jpg" width="25%" onClick="parent.location='images/sortez_du_train-train_flyer2.jpg'" alt="Sortez du train-train flyer p2" style="float: left; margin-right: 30px">
+          <hr class=allbelow>   
+        </div>
+<!--      </div> -->
+EOD;
              }
           if ($first) 
                {
                 echo "<h1>Our next public opening will be";
-                $close_heading = '</h1>';
+                $close_heading = "</h1>\r\n";
                 switch ($eventdate[2])
                  {
                   case "normal":
-                    echo " our normal opening ";
+                    $opening_type = " our normal opening ";
                     break;
                   case "spring":
-                    echo " our spring festival ";
+                    $opening_type = " our spring festival ";
                     break;
                   case "summer":
-                    echo " our annual festival";
+                    $opening_type = " our annual festival";
                     break;
                   case "heritage":
-                    echo " for French heritage weekend";
+                    $opening_type = " for French heritage weekend";
                     break;
+                  case "specialevent":
+                    $opening_type = " for Get out of the routine";
                  }
                } else 
                {
-                 $close_heading = '</h2>';
+                $close_heading = "</h2>\r\n";
                 switch ($eventdate[2])
                  {
                   case "normal":
-                    echo "<h2> Afternoon opening:";
+                    $opening_type = "<h2> Afternoon opening:";
                     break;
                   case "spring":
-                    echo "<h2> Spring festival:";
+                    $opening_type = "<h2> Spring festival:";
                     break;
                   case "summer":
-                    echo "<h2> Annual summer Festival: ";
+                    $opening_type = "<h2> Annual summer Festival: ";
                     break;
                   case "heritage":
-                    echo "<h2> French heritage weekend:";
+                    $opening_type = "<h2> French heritage weekend:";
                     break;
+                  case "specialevent":
+                    $opening_type = " <h2> Get out of the routine:";                    
                  }
                 
                }  
           switch ($eventdate[1])
             {
              case 1:
-               echo " on ".$firstdayday." the ".$firstdaynum." of ".$firstdaymon." ".$firstdayyear; 
+               $when_open = " on ".$firstdayday." the ".$firstdaynum." of ".$firstdaymon." ".$firstdayyear; 
                break;
              case 2:
-               
-               echo " on ".$firstdayday." the ".$firstdaynum;
-               if ($firstdaymon !== $seconddaymon) {echo " of ".$firstdaymon;}
-               echo " and ".$seconddayday." the ".$seconddaynum." of ".$seconddaymon." ".$seconddayyear;
-              
+               $when_open = " on ".$firstdayday." the ".$firstdaynum;
+               if ($firstdaymon !== $seconddaymon) {$when_open = $when_open." of ".$firstdaymon;}
+               $when_open = $when_open." and ".$seconddayday." the ".$seconddaynum." of ".$seconddaymon." ".$seconddayyear;
                break;
             }
-          echo ' from '.$eventdate[3].' to '.$eventdate[04];
-          echo $close_heading."\r\n";
+          $when_open = $when_open.' from '.$eventdate[3].' to '.$eventdate[04];
+          echo "$opening_type$when_open$close_heading";
+          if (isset($more_info)) {
+             echo $more_info;
+             unset($more_info);
+          }
           echo "    <add-to-calendar-button 
     name=\"$button_subject\"
     description=\"Centre Denis Papin open days, model railways, ride on railways, Coal Mine museum, Postal Carriages museum.\"
@@ -178,20 +206,23 @@ echo "\r\n    options=\"'Apple','Google','iCal','Outlook.com','Yahoo','Microsoft
           if ($first)
              {
                 $first = false;
-                echo "Following the above our open days are: \r\n";
+                echo "<h1>Following the above our open days are: \r\n </h1>";
              }
-             
 
-             
-             
-             
           } # end of test for old dates. (dates MUST be in order)
           
      } # end of for loop through all dates
 
 ?> 
-    
-  <!--  
+  <!--  (doesn't work) <add-to-calendar-button
+  name="Subscribe to CMCF public calendar"
+  startDate="2023-10-23"
+  subscribe
+  icsFile="https://calendar.google.com/calendar/u/0?cid=Ym44c2lncDIwMTVpanNuOWh0YXJ2NjZqbXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  options="'Apple','Google','iCal','Outlook.com','Microsoft 365','Microsoft Teams','Yahoo'"
+  lightMode="bodyScheme"
+></add-to-calendar-button>   
+
     <h1>Our next public opening will be our Spring festival Saturday 13th and Sunday 14th April 2024 from 10am to 6pm</h1>
         <add-to-calendar-button 
   name="CMCF spring festival"

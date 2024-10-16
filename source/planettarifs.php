@@ -5,8 +5,8 @@ include 'producemenus.php';
 ?>
   <div class=rightbody>
 
-  <h1>Accueil du public</h1>                                                  
-  <p>Le Centre est ouvert de Avril &agrave;  Octobre le 2e dimanche du  mois. Voir <a href='agenda.htm'> notre agenda</a></p>
+  <h1>Accueil du public</h1>
+  <p>Le centre est ouvert au moins un dimanche de chaque mois entre avril et octobre. Pour les dates exactes, voir <a href='agenda.htm'> notre agenda</a></p>
   <p>L'accès au parc autour du Centre Denis Papin se fait par un wagon postal qui est équipé de rampes pour personnes à mobilité réduite.
      L'accès au Centre Denis Papin lui-même est au rez-de-chaussée du bâtiment et ne comporte aucune marche.
      Un ascenseur permet l'accès aux étages supérieurs.</p>

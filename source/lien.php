@@ -5,7 +5,7 @@ include 'producemenus.php';
 ?>
   <div class=rightbody>
   <h1 class=rightheader>Liens vers les partenaires du CMCF</h1>
-  <p>Le CMCF est jumelé avec <a href="http://ptvf.fte2.org/" target="_blank">Le Petit Train à Vapeur de Forest (PTVF)</a>  à Bruxelles.
+  <p>Le CMCF est jumelé avec <a href="https://ptvf.eu//" target="_blank">Le Petit Train à Vapeur de Forest (PTVF)</a>  à Bruxelles.
 Il s'agit bien d'un jumelage entre deux clubs frères avec échanges de participations :
     <ul>
       <li>A Bruxelles à l'ouverture et à la clôture de la saison ainsi que le 21 juillet, fête nationale Belge </li>
