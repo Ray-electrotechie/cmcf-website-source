@@ -97,7 +97,7 @@ include 'producemenus.php';
                 $button_subject = 'Visit: CMCF summer festival';
                 $more_info=<<<EOD
       <div>
-            <img src="images/CMCF_Festival2024_miniature.jpg" width="30%" onClick="parent.location='images/CMCF_Festival2024.jpg'" alt="Festival of steam 2024" style="float: left; margin-right: 30px">
+            <img src="images/CMCF_Festival{$firstdayyear}_miniature.jpg" width="30%" onClick="parent.location='images/CMCF_Festival{$firstdayyear}.jpg'" alt="Festival of steam {$firstdayyear}" style="float: left; margin-right: 30px">
             <h2>Click the image to enlarge it</h2>
           <hr class=allbelow>   
         </div>

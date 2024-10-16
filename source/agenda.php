@@ -37,10 +37,20 @@ include 'producemenus.php';
          
          
          
+        <p>Lors de chaque journ&eacute;e portes ouvertes du Centre Denis Papin, les attractions suivantes seront propos&eacute;es (avec des attractions suppl&eacute;mentaires pendant les Festivals) :</p>
+        <div class="description">
+          <ul>
+            <li>Des locomotives &agrave; vapeur et &eacute;lectriques sur un circuit de 700 m en &eacute;cartement 5&Prime; et 7&frac14;&Prime; offrant des trajets gratuits pour les adultes et les enfants.</li>
+            <li>Des pr&eacute;sentations des activit&eacute;s des clubs et des collections historiques du CMCF seront propos&eacute;es tout au long de la journ&eacute;e les deux jours.         </li>
+            <li>De grands r&eacute;seaux ferroviaires de diff&eacute;rents petits &eacute;cartements seront en exploitation.                                                              </li>
+            <li>L'acc&egrave;s aux ateliers de restauration de la locomotive &agrave; vapeur Pacific de la SNCF sera ouvert &agrave; tous les visiteurs.                                  </li>
+            <li>Six wagons postaux abritant le mus&eacute;e consacr&eacute; &agrave; l'histoire des bureaux de tri ambulants.                                                             </li>
+            <li>Un mus&eacute;e de la mine dans l'ancienne &eacute;cole de formation des mineurs.                                                                                  </li>
+          </ul>
          
    <?php
    $day = array("dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi");
-   $month = array("none","janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"); 
+   $month = array("none","janvier", "f&eacute;vrier", "mars", "avril", "mai", "juin", "juillet", "ao&ucirc;t", "septembre", "octobre", "novembre", "d&eacute;cembre"); 
    echo "\r\n";
    $timeofcalc=date_create("now");
    $first = true;
@@ -65,19 +75,19 @@ include 'producemenus.php';
           switch ($eventdate[2])
              {
               case "normal":
-                $button_text = 'Ajoutez la journée portes ouvertes du CMCF à votre agenda';
-                $button_subject = 'Visite : journée portes ouvertes CMCF';
+                $button_text = 'Ajoutez la journ&eacute;e portes ouvertes du CMCF &agrave; votre agenda';
+                $button_subject = 'Visite : journ&eacute;e portes ouvertes CMCF';
                 break;
               case "spring":
-                $button_text = 'Ajoutez la fête du printemps du CMCF à votre agenda';
-                $button_subject = 'Visite : Fête du printemps du CMCF';
+                $button_text = 'Ajoutez la f&ecirc;te du printemps du CMCF &agrave; votre agenda';
+                $button_subject = 'Visite : F&ecirc;te du printemps du CMCF';
                 break;
               case "summer":
-                $button_text = "Ajoutez le festival d'été du CMCF à votre agenda";
-                $button_subject = "Visite : Festival d'été du CMCF";
+                $button_text = "Ajoutez le festival d'&eacute;t&eacute; du CMCF &agrave; votre agenda";
+                $button_subject = "Visite : Festival d'&eacute;t&eacute; du CMCF";
                 $more_info=<<<EOD1
       <div>
-            <img src="images/CMCF_Festival2024_miniature.jpg" width="30%" onClick="parent.location='images/CMCF_Festival2024.jpg'" alt="Festival 2024" style="float: left; margin-right: 30px">
+            <img src="images/CMCF_Festival{$firstdayyear}_miniature.jpg" width="30%" onClick="parent.location='images/CMCF_Festival{$firstdayyear}.jpg'" alt="Festival {$firstdayyear}" style="float: left; margin-right: 30px">
             
             <h2>Cliquez sur l'image pour voir une version agrandie.</h2>
             
@@ -86,17 +96,17 @@ include 'producemenus.php';
 EOD1;
                 break;
               case "heritage":
-                $button_text = 'Ajoutez les journées du patrimoine CMCF à votre agenda';
-                $button_subject = 'Le CMCF est ouvert pour les Journées du Patrimoine';
+                $button_text = 'Ajoutez les journ&eacute;es du patrimoine CMCF &agrave; votre agenda';
+                $button_subject = 'Le CMCF est ouvert pour les Journ&eacute;es du Patrimoine';
                 break;
               case "specialevent":
-                $button_text = 'Ajoutez le Sortez du train-train à votre agenda';
+                $button_text = 'Ajoutez le Sortez du train-train &agrave; votre agenda';
                 $button_subject = 'Le CMCF est ouvert pour Le Sortez du train-train';
                 $more_info=<<<EOD2
 <!--      <div style="float:left"> for some reason this screws up all button or image clickons -->
       <div>
             <img src="images/sortez_train_train_fiche_mini.jpg" width="30%" onClick="parent.location='images/sortez_train_train_fiche_a4.jpg'" alt="Sortez du train-train" style="float: left; margin-right: 30px">
-            <h2>CMCF contribue à un événement spécial "Sortez du train-train". <a href="images/sortez du train-train_flyer.pdf">Téléchargez la brochure complète</a> au format PDF pour en savoir plus sur l'événement d'une journée. </h2>
+            <h2>CMCF contribue &agrave; un &eacute;v&eacute;nement sp&eacute;cial "Sortez du train-train". <a href="images/sortez du train-train_flyer.pdf">T&eacute;l&eacute;chargez la brochure compl&egrave;te</a> au format PDF pour en savoir plus sur l'&eacute;v&eacute;nement d'une journ&eacute;e. </h2>
             <h2>Cliquez sur n'importe quelle image pour voir une version agrandie.</h2>
             <br><img src="images/train-train01_mini.jpg" width="25%" onClick="parent.location='images/sortez_du_train-train_flyer1.jpg'" alt="Sortez du train-train flyer p1" style="float: left; margin-right: 30px">
                 <img src="images/train-train02_mini.jpg" width="25%" onClick="parent.location='images/sortez_du_train-train_flyer2.jpg'" alt="Sortez du train-train flyer p2" style="float: left; margin-right: 30px">
@@ -121,7 +131,7 @@ EOD2;
                     $opening_type = " notre festival annuel";
                     break;
                   case "heritage":
-                    $opening_type = " pour les journées du patrimoine";
+                    $opening_type = " pour les journ&eacute;es du patrimoine";
                     break;
                   case "specialevent":
                     $opening_type = " le Sortez du train-train";
@@ -138,10 +148,10 @@ EOD2;
                     $opening_type = "<h2> Festival de printemps:";
                     break;
                   case "summer":
-                    $opening_type = "<h2> Festival d'été annuel: ";
+                    $opening_type = "<h2> Festival d'&eacute;t&eacute; annuel: ";
                     break;
                   case "heritage":
-                    $opening_type = "<h2> Les journées du patrimoine:";
+                    $opening_type = "<h2> Les journ&eacute;es du patrimoine:";
                     break;
                   case "specialevent":
                     $opening_type = " <h2> le Sortez du train-train";
@@ -188,7 +198,7 @@ echo "\r\n    options=\"'Apple','Google','iCal','Outlook.com','Yahoo','Microsoft
           if ($first)
              {
                 $first = false;
-                echo "<h1>Suite à ce qui précède, nos journées portes ouvertes sont: \r\n </h1>";
+                echo "<h1>Suite &agrave; ce qui pr&eacute;c&egrave;de, nos journ&eacute;es portes ouvertes sont: \r\n </h1>";
              }
 
           } # end of test for old dates. (dates MUST be in order)
@@ -196,142 +206,12 @@ echo "\r\n    options=\"'Apple','Google','iCal','Outlook.com','Yahoo','Microsoft
      } # end of for loop through all dates
 
 ?> 
-  <!--  (doesn't work) <add-to-calendar-button
-  name="Subscribe to CMCF public calendar"
-  startDate="2023-10-23"
-  subscribe
-  icsFile="https://calendar.google.com/calendar/u/0?cid=Ym44c2lncDIwMTVpanNuOWh0YXJ2NjZqbXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-  options="'Apple','Google','iCal','Outlook.com','Microsoft 365','Microsoft Teams','Yahoo'"
-  lightMode="bodyScheme"
-></add-to-calendar-button>   
-
-    <h1>Our next public opening will be our Spring festival Saturday 13th and Sunday 14th April 2024 from 10am to 6pm</h1>
-        <add-to-calendar-button 
-  name="CMCF spring festival"
-  description="Centre Denis Papin open days, model railways, ride on railways, Coal Mine museum, Postal Carriages museum."
-  startDate="2024-04-13"
-  startTime="10:00"
-  endTime="18:00"
-  timeZone="Europe/Paris"
-  location="Centre Denis Papin, Oignies, France"
-  recurrence="daily"
-  recurrence_interval="1"
-  recurrence_count="2"
-  options="'Apple','Google','iCal','Outlook.com','Yahoo','Microsoft365','MicrosoftTeams'"
-  buttonStyle="3d"
-  size="4"
-  label="Add CMCF Spring Festival"
-      ></add-to-calendar-button>
-
-<add-to-calendar-button 
-  name="CMCF summer festival"
-  description="Centre Denis Papin open days, model railways, ride on railways, Coal Mine museum, Postal Carriages museum, food, bar"
-  startDate="2024-08-31"
-  startTime="10:00"
-  endTime="18:00"
-  timeZone="Europe/Paris"
-  location="Centre Denis Papin, Oignies, France"
-  recurrence="daily"
-  recurrence_interval="1"
-  recurrence_count="2"
-  options="'Apple','Google','iCal','Outlook.com','Yahoo','Microsoft365','MicrosoftTeams'"
-  buttonStyle="3d"
-  size="4"
-  label="Add to diary: CMCF summer festival"
-></add-to-calendar-button> -->
     <br><br>
-<!--    <div id="hcalendar-Steam-Festival" class="vevent"style="float:left">
-      <img src="images/CMCF_Festival23vraiminiature.jpg" height="406" onClick="parent.location='images/CMCF_Festival23vrai.jpg'" alt="2022 festival flyer" style="float: left; margin-right: 30px">
-      <!-- <p>Although you may visit on our "normal" Sunday open days to view the museum, the models and ride on the miniature trains, our main event is the annual &ldquo;Festival of steam&rdquo;.
-      Make a note in your diary for our next festival of steam:
-      
-      <h2 class="summary">The 2023 Festival of Steam</h2>
-      <p> On <abbr title="2023-08-26T10:00+02:0000" class="dtstart">Saturday 26th </abbr>
-        and <abbr title="2023-08-27T18:00+02:00" class="dtend">Sunday 27th August 2023</abbr> the
-        &ldquo;Centre de la Mine et du Chemin de Fer de Oignies (62)&rdquo; will hold its 28<sup>th</sup> Festival of Steam.
-        Full sized and model railways will be exhibited at the <span class="location">Centre Denis Papin</span>.
-        The Festival will be open from 10am until 6pm each day. Click the image opposite for a larger view of the poster.</p>
-     <!--    <p>The special event during the 2014 festival was the visit of the locomotive &ldquo;Yvonne&rdquo; from the  <a href="http://www.stoomcentrum.be/"> Stoomcentrum (Steam Centre) Maldegem</a>. In the poster to the left (click to enlarge) Yvonne is followed by our <a href="http://fr.wikipedia.org/wiki/Draisine">&ldquo;draisine&rdquo;</a> (works vehicle). Yvonne, number 947 is one of 20 constructed in 1893 by St-L&eacute;onard of Li&egrave;ge. It's weight is 15 Tonnes. The working pressure of the boiler (the original) is 10 bar. The locomotive, owned by a member of Stoomcentrum, has been entirely restored. It arrived by road from its home in Stoomcentrum and stayed for the duration of the steam festival. Despite the limited accomodation, the locomotive was kept busy during both days giving short rides on our connection to the main lines.</p>
-  This year the <a href="http://www.cav-escarbille.com/" TARGET="_blank">Confr&eacute;rie des Amateurs de la Vapeur</a>
-      (Steam Enthusiasts Federation) held their annual general meeting at Oignies.-->
-      <!--<p>The theme for the 2019 Festival is not yet decided.
-      	<p>The theme for the 2015 Festival was the train in the world of toys and games from the perspective of the collector.
-      	Thus visitors were able to re-visit their childhood memories of electric and wind-up trains, puzzles and other gadgets such as bottle openers, phones, decorative items and lighters.</p> -->
-      <!--<p> The theme for this year is &ldquo;The Marshall plan and its locomotives&rdquo;. </p>
-      <p>On show will be the diesel locomotive type A1A A1A 62094, manufactured by Baldwin in Philiadelphia in 1946 and supplied to France under the Marshall plan. Based at the Lens depot, this machine was transfered to CMCF in 1996 after its retirement.</p>
-      <p>As a special attraction the wartime vehicle society based at Wingles, <a href='https://www.facebook.com/VehiculesMemoirePassionWingles/' TARGET="_blank"> Association V&eacute;hicules M&eacute;moire Passion de Wingles</a>, will display a number of military vehicles which illustrate those participating in the D day landings of June 1944. A Dodge, equipped with railway wheels, will be displayed in front of the Pacific workshop and will offer short rides to our visitors.</p>
-      <p>There will of course be our normal attractions:</p>
-       <div class="description">
-         <ul>
-      	<li>Steam and electric locomotives on a 700m circuit in 5&Prime; and 7&frac14;&Prime; gauges offering free rides for adults and children.</li>
-     <!-- 	<li>A steam Traction Engine giving rides around the complex (to be confirmed).</li>
-      	<li>Presentations of the clubs activities and the historical collections of CMCF will be available throughout the day on both days.</li>
-      	<li>Large railway layouts of various small gauges will be in operation.</li>
-      	<li>Access to the workshops where the SNCF Pacific Steam Locomotive is being restored will be available to all visitors.</li>
-      	<!--
-      	<li>The formal handover of two 7&frac14;&Prime; gauge locomotives belonging to the Cit&eacute; du Train
-      	    which have been restored to running condition by CMCF (a Bo-Bo diesel modelled on the mines' shunting machines
-      	    and an 0-4-0 'Progr&egrave;s' type Decauville steam locomotive).</li>
-      	-->
-   <!--   	<li>Stalls where you can buy from specialist suppliers will be open on both days.</li>
-      	<li>Six postal carriages containing the museum dedicated to the history of travelling sorting offices.</li>
-      	<li>A mine museum in the old mine training school.</li>
-   <!--   	<li>Drinks and food stalls. </li>
-         </ul>
-   <!--      <p>Entrance fee for the Festival of Steam: Adults 6 euros, juniors (6 to 16 years) 3 euros, accompanied children 6 and under - no charge.
-         	Group visit (minimum 20 persons) 3 euros. PROSITEC members holding a pass 3 euros.(all to be confirmed)</p>
-        <div class=buttoncontainer>
-        <div class="atcb" style="display:none;">
-            {"name":"Rail Festival - full scale and models",
-            "description":"With: Market,Several networks in different guages,\n Access to the workshop restoring a Pacific steam locomotive\n Visit to the museum of postal wagons\n Visit to the mine museum  ",
-            "startDate":"08-26-2023",
-            "endDate":"08-27-2023",
-            "startTime":"10:00",
-            "endTime":"18:00",
-            "location":"www.cmcf-oignies.com , Centre Denis Papin, Oignies",
-            "label":"Add this rail Festival<br>to my diary",
-            "options":[
-              "Apple",
-              "Google",
-              "iCal",
-              "Microsoft365",
-              "Outlook.com",
-              "Yahoo"
-            ],
-            "timeZone":"Europe/Berlin",
-            "trigger":"click",
-            "inline":true,
-            "iCalFileName":"cmcf_rail_festival_23"}
-        </div>
-        </div>
-         <p><a href=festival2012en.htm>Some photos of the 2012 festival</a> illustrate the range of locomotives and other attractions at our steam festival.</p>
-         <p>We welcome visitors with their own 5 inch or 7&frac14;&Prime; locomotives, trams and rolling stock (whether steam or not).</p>
-         <p>Our site has room to accommodate caravans and camper vans with their own toilet facilities for the duration of the open weekend.
-                 Unfortunately we cannot accomodate tents since the only toilet and washing facilites we have are in a building which is secured and alarmed overnight.
-                 Also, if you are holidaying on Continental Europe you can deposit your locomotive with us we will gladly store it for
-                 the duration of your holiday (unfortunately at your risk). </p>
-         <p>If you wish to bring something, store it or put your caravan on our site please <a href=mailto:secretaire@cmcf-oignies.com>contact us</a> at least 3 weeks in advance. </p>
-         <p>Both the <a href=festival2012en.htm>2012 festival</a> and the <a href=festival2011english.htm>2011 festival</a> included steam traction engine rides around the compound.
-         <a href=festival2009english.htm>The 2009 festival </a>contained an important moment for the society; the lifting of the boiler of the Super Pacific.</a> </p>
-       </div> <!-- description -->
+
        <hr class=allbelow> <hr/>
     </div> <!-- all festival -->
 
-<!-- <h1 class=rightheader>External events in which CMCF participates</h1>
-    <a name="external"></a>
-    <ul>
-    	<li>Come and meet us at <a href="http://www.trainsmania.com/" TARGET="_blank">Trainsmania</a> on 28/29/30 April in Lille where we will be showing some of our activities; a locomotive driving simulator, 1/32 scale models and the restoration of full-size machines. We will also be operating a live steam track in 5 inch/127 mm. </li>
-    </ul>
-    <!-- <li>Weekend of 20 et 21 April &mdash; Spring Festival at Beaucamps-Ligny with the Steam Traction engine and passenger wagons;</li>
-    <li>Weekend of 20 and 21 April &mdash; Maubeuge - Five inch gauge circuit with Steam traction;</li>
-    <li>Weekend of 27 and 28 April &mdash; <a href="http://www.fetevapeur.fr"> Steam Festival</a>  of the  "Chemin de Fer de la Baie de Somme" ;</li>
-<li>Weekend of 27 and 28 April &mdash; Opening meeting of the season <a href="http://ptvf.fte2.org/">PTVF de Forest &agrave; Bruxelles</a> ;</li> 
-<li>Sunday 19 May (Pentecost (Whit Sunday)) &mdash; stand at (<a href="http://appeva.perso.neuf.fr/fest.htm">Le P&apos;tit train de la Haute Somme)</a> ;</li>
-<li>Weekend of 29 and 30 June &mdash; Five inch guage circuit at "la Ferme du Gauquier &agrave; Lys-lez-Lannoy" ;</li>
-<li>Weekend of 05 and 06 October &mdash; Last meeting of the season at <a href="http://ptvf.fte2.org/">PTVF de Forest &agrave; Bruxelles</a> ;</li>
-<li>Saturday 02 November &mdash; Five inch gauge circuit on the forecourt of the H&ocirc;tel de ville of Lens (to be confirmed) ;</li>
-<li>Weekend of 23 and 24 November &mdash; Five inch gauge circuit at the Christmas Market, Oignies ;</li>
-    </ul> -->
+
     <hr class=allbelow> <hr/>
   </div> <!-- rightbody -->
 </div> <!-- mainbody -->

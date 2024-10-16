@@ -11,3 +11,6 @@ april10/
 *.wmv
 *.htm
 #
+source/agendaold.php
+source/agendabackup.php
+index.history

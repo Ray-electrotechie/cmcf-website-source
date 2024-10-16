@@ -22,14 +22,14 @@ if (isset($calendarbutton)) {$insertcalscript = "\r\n<script src=\"https://cdn.j
 /* must enter with $thisfilnam being set to the name of the file corresponding to the menus*/
 $tabspaces = 4;
 $basepadding = 2; /* how many spaces to tab out on ALL the menu items (pretty print only)*/
-$opendates = array(array('2023-10-09',1,'normal','14:00','18:00'),
-                   array('2024-04-13',2,'spring','10:00','18:00'),
-                   array('2024-05-05',1,'normal','14:00','18:00'),
-                   array('2024-06-09',1,'specialevent','14:00','18:00'),
-                   array('2024-07-14',1,'normal','14:00','18:00'),
-                   array('2024-08-31',2,'summer','10:00','18:00'),
-                   array('2024-09-21',2,'heritage','10:00','18:00'),
-                   array('2024-10-13',1,'normal','14:00','18:00')
+
+$opendates = array(array('2025-04-05',2,'spring','10:00','18:00'),
+                   array('2025-05-11',1,'normal','14:00','18:00'),
+                   array('2025-06-08',1,'normal','14:00','18:00'),
+                   array('2025-07-13',1,'normal','14:00','18:00'),
+                   array('2025-08-30',2,'summer','10:00','18:00'),
+                   array('2025-09-20',2,'heritage','10:00','18:00'),
+                   array('2025-10-12',1,'normal','14:00','18:00')
                   );
 /* Menu structure
           index is internal name - must be unique and in order of menus
